@@ -85,7 +85,7 @@ Seu saldo é de R$ 100.00
 
 Salve o código em um arquivo banco.py e execute:
 ```bash
-python banco.py
+python sistema_bancario.py
 ```
 
 
