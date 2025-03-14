@@ -2,7 +2,7 @@
 
 Este é um programa em Python que simula um sistema bancário simples com as seguintes funcionalidades:
 
-## Depósito
+* Depósito
 
 * Saque
 
