@@ -41,30 +41,41 @@ Este é um programa em Python que simula um sistema bancário simples com as seg
 ## Exemplo de Uso
 
 ```bash
-Escolha uma opção:
+Escolha uma opcão 
+
+[d] Depositar     
+[s] Sacar
+[e] Extrato       
+[q] Sair
+
+ => d
+Depósito
+
+Digite o valor do depósito ou Digite 'q' para voltar ao menu anterio 
+
+100
+
+Depósito realizado, confira seu novo saldo na opção de extrato
+
+Escolha uma opcão
+
 [d] Depositar
 [s] Sacar
 [e] Extrato
 [q] Sair
-=> d
 
-Digite o valor do depósito:
-=> 100
+ => e
+Extrato
 
-Depósito realizado com sucesso!
 
-Escolha uma opção:
-[d] Depositar
-[s] Sacar
-[e] Extrato
-[q] Sair
-=> e
+==========Extrato==========
 
-========== Extrato ==========
 Depósito realizado no valor de R$ 100.00
 
+
 Seu saldo é de R$ 100.00
-============================
+
+===========================
 ```
 ## Requisitos
 

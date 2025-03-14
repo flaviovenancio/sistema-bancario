@@ -15,7 +15,7 @@ LIMITE_SAQUES = 3
 
 def depositar(saldo, extrato):
 
-    menu_deposito = "Digite o valor do deposito ou Digite 'q' para voltar ao menu anterio \n\n"
+    menu_deposito = "Digite o valor do depósito ou Digite 'q' para voltar ao menu anterio \n\n"
 
     while True:
 
@@ -29,17 +29,17 @@ def depositar(saldo, extrato):
             valor_deposito = float(valor)
             
             if valor_deposito <= 0:
-                print("Valor invalido, digite o valor novamente")
+                print("Valor inválido, digite o valor novamente")
 
             else:
                 float(valor_deposito)
                 saldo += valor_deposito
                 extrato += f"Depósito realizado no valor de R$ {valor_deposito:.2f}\n"
-                print("\nDeposito realizado, confira seu novo saldo na opção de extrato\n")
+                print("\nDepósito realizado, confira seu novo saldo na opção de extrato\n")
                 return saldo, extrato
 
         except ValueError:
-            print("Valor invalido, digite um valor ou digite 'q' para sair.")
+            print("Valor inválido, digite um valor ou digite 'q' para sair.")
 
 def sacar(saldo, extrato, numero_de_saques):
 
@@ -60,7 +60,7 @@ def sacar(saldo, extrato, numero_de_saques):
             valor_saque = float(valor)
 
             if valor_saque <= 0:
-                print("Valor invalido, digite o valor novamente")
+                print("Valor inválido, digite o valor novamente")
                 
             elif valor_saque > 500:
                 print("Valor excede o permitido para um unico saque, seu limite por saque é de R$ 500, tente novamente")
@@ -73,7 +73,7 @@ def sacar(saldo, extrato, numero_de_saques):
                 return saldo, extrato, numero_de_saques
 
         except ValueError:
-            print("Valor invalido, digite um valor ou digite 'q' para sair.")
+            print("Valor inválido, digite um valor ou digite 'q' para sair.")
 
 def exibir_extrato(saldo, extrato):
     
@@ -86,7 +86,7 @@ def exibir_extrato(saldo, extrato):
         return saldo
     
 while True:
-    opcao = input(f"Escola uma opcão {menu}")
+    opcao = input(f"Escolha uma opcão {menu}")
      
     if opcao == "d":
         print("Depósito\n")
@@ -109,4 +109,3 @@ while True:
         
     else :
         print("Opção invalida, por favor escolher novamente a operação desejada")
-        
